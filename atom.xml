@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://liang5757.github.io/"/>
   <updated>2020-07-09T15:36:14.039Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://liang5757.github.io/</id>
   
   <author>
     <name>Liang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/07/09/hello-world/"/>
-    <id>http://yoursite.com/2020/07/09/hello-world/</id>
+    <link href="https://liang5757.github.io/2020/07/09/hello-world/"/>
+    <id>https://liang5757.github.io/2020/07/09/hello-world/</id>
     <published>2020-07-09T15:36:14.039Z</published>
     <updated>2020-07-09T15:36:14.039Z</updated>
     
