@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liang5757.github.io/"/>
-  <updated>2020-08-18T09:58:39.497Z</updated>
+  <updated>2020-09-15T14:18:36.905Z</updated>
   <id>https://liang5757.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>element的表单验证效果替换</title>
+    <link href="https://liang5757.github.io/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/"/>
+    <id>https://liang5757.github.io/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/</id>
+    <published>2020-09-15T14:17:25.000Z</published>
+    <updated>2020-09-15T14:18:36.905Z</updated>
+    
+    <content type="html"><![CDATA[<p>在做项目的时候看到了这个需求，需要用图片替换默认的文字显示</p><p><img src= "/img/loading.gif" data-src="/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/image-20200915220854381.png" alt="image-20200915220854381"></p><p>f12可以看到出错了的表单项会在<code>div.el-form-item__content</code>下有个<code>div.el-form-item__error</code></p><p><img src= "/img/loading.gif" data-src="/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/image-20200915221210128.png" alt="image-20200915221210128"></p><p>于是就对<code>div.el-form-item__error</code>进行操作</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">/deep/ .el-form-item__content &#123;</span><br><span class="line">    <span class="attribute">display</span>: flex;<span class="comment">// 使错误信息显示在同一行</span></span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">20px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 修改错误显示</span></span><br><span class="line">    /deep/ .el-form-item__error &#123;</span><br><span class="line">        <span class="attribute">position</span>: relative;</span><br><span class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">0</span>;<span class="comment">// 把默认文字取消</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 用伪元素插入背景图片</span></span><br><span class="line">        &amp;<span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">            <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">            <span class="attribute">display</span>: block;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">20px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">            <span class="attribute">position</span>: absolute;</span><br><span class="line">            <span class="attribute">right</span>: -<span class="number">10px</span>;</span><br><span class="line">            <span class="attribute">top</span>: <span class="number">10px</span>;</span><br><span class="line">            <span class="attribute">background</span>: url(<span class="string">"~@/assets/img/error.png"</span>) <span class="number">0</span> <span class="number">0</span> no-repeat;</span><br><span class="line">            <span class="attribute">background-size</span>: <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在做项目的时候看到了这个需求，需要用图片替换默认的文字显示&lt;/p&gt;
+&lt;p&gt;&lt;img src= &quot;/img/loading.gif&quot; data-src=&quot;/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://liang5757.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="https://liang5757.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>微信网页授权</title>
