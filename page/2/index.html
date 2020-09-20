@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Liang的个人博客</title><meta name="description"><meta name="author" content="Liang"><meta name="copyright" content="Liang"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/avatar.jpg"><link rel="canonical" href="https://liang5757.github.io/page/2/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Liang的个人博客"><meta property="og:url" content="https://liang5757.github.io/page/2/"><meta property="og:site_name" content="Liang的个人博客"><meta property="og:description"><meta property="og:image" content="https://liang5757.github.io/img/avatar.jpg"><meta property="article:published_time" content="2020-09-20T09:01:40.411Z"><meta property="article:modified_time" content="2020-09-20T09:01:40.411Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Liang的个人博客" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books"><i class="fa-fw fa fa-book"></i><span> 书籍</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/background.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Liang的个人博客</a></span><span class="pull-right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/books"><i class="fa-fw fa fa-book"></i><span> 书籍</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Liang的个人博客</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Liang5757" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1036933225@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/31/%E6%B5%AE%E5%8A%A8%E4%B8%8EBFC/" title="浮动与BFC">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮动与BFC"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/31/%E6%B5%AE%E5%8A%A8%E4%B8%8EBFC/" title="浮动与BFC">浮动与BFC</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-07-31 17:11:21"><i class="far fa-calendar-alt"></i>2020-07-31</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-31 17:11:45"><i class="fas fa-history"></i>2020-07-31</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/CSS/">CSS</a></span></div><div class="content">1.  浮动的工作原理浮动会脱离正常的文档流，并吸附到其父容器左边，正常布局中位于浮动元素下的内容会围绕着浮动元素
+2.可选值
+
+
+值
+效果
+
+
+
+none
+默认值，元素默认在文档流中排列
+
+
+left
+元素会立即脱离文档流，向页面的左侧浮动
+
+
+right
+元素会立即脱离文档流，向页面的右侧浮动
+
+
+3.浮动的规则内联元素变块元素当为一个元素设置浮动以后（float属性是一个非none的值），元素会立即脱离文档流，元素脱离文档流以后，它下边的元素会立即向上移动，元素浮动以后，会尽量向页面的左上或这是右上漂浮，直到遇到父元素的边框或者其他的浮动元素如果浮动元素上边是一个没有浮动的块元素，则浮动元素不会超过块元素，浮动的元素不会超过他上边的兄弟元素，最多最多一边齐。
+4.浮动的包裹性指的是元素尺寸刚好容纳内容, 表现得就像diaplay:inline-block
+一样具有包裹性的其他属性:
+123display:inline-blockposition:absolute/fixed/stickyoverflow:hidden/scroll
+
+5. 浮动的破坏性会使父元素高度塌陷——为了实 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/31/Java%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/" title="Java的字符串操作">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java的字符串操作"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/31/Java%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/" title="Java的字符串操作">Java的字符串操作</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-07-31 17:04:16"><i class="far fa-calendar-alt"></i>2020-07-31</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-31 17:07:13"><i class="fas fa-history"></i>2020-07-31</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/">大学课程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/Java/">Java</a></span></div><div class="content">一、比较
+
+
+语言
+操作
+形式
+机制
+线程安全性
+
+
+
+c/c++
+char*
+字符指针
+通过手动修改指针指向的内存空间修改字符串
+未知
+
+
+c/c++
+String
+容器类
+内部使用char数组存储字符，但内存管理，分配和null终止都由字符串类本身来处理
+并发的读操作是线程安全的
+
+
+Java
+String
+1. String a = “a”，是以字面常量的形式储存在常量池中2. new String(“a”) 创建的以对象的形式存放在堆中
+对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+安全
+
+
+Java
+StringBuilder
+对象
+所有操作都在原有的对象上进行
+不安全
+
+
+Java
+StringBuffer
+对象
+所有操作都在原有的对象上进行
+安全
+
+
+二、性能测试测试代码1234567891011121314151617181920212223242526272829303132333435363738394041public class Main &#123;    private static int NUM = 10000 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/29/%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97%E7%94%9F%E6%88%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A8%8B%E5%BA%8F-Python/" title="四则运算生成命令行程序 (Python)">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="四则运算生成命令行程序 (Python)"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/29/%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97%E7%94%9F%E6%88%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A8%8B%E5%BA%8F-Python/" title="四则运算生成命令行程序 (Python)">四则运算生成命令行程序 (Python)</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-07-29 15:29:07"><i class="far fa-calendar-alt"></i>2020-07-29</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-31 17:03:00"><i class="fas fa-history"></i>2020-07-31</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/">大学课程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a></span></div><div class="content">Github项目地址：Github Pages结对项目成员：张鹏 3118004985 郑靓 3118004988
+
+一、项目需求分析
+二、功能实现
+
+三、代码实现or功能说明★ GUI功能扩展说明 🎈
+
+采用了多线程的界面，任何操作不会阻塞其他操作，例如：可以在生成答案的同时批改作业
+
+得益于上面的设计，可以同时生成多个表达式文件，存储形式如下所示
+  
+
+对于错误的输入，会有提示，如下所示
+  
+
+对于文件选择后，点击批改，对于文件的格式有错误检查
+  
+
+
+通过后缀表达式的计算过程，确保生成表达式满足题目所有要求，避免重复的表达式生成 (详参下文 ‘判断重复的思路’ )★ 多线程（防止I/O阻塞）🎈
+创建生产者线程, 传参进队列 ‘queue’
+
+
+producer = multiprocessing.Process(target=self.expression_generator, args=(queue,))
+
+
+创建消费者进程, 传参进队列 ‘queue’
+
+
+consumer = multiprocessing.Process(target=self.io_opera ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/28/WordCount-Python/" title="WordCount (Python)">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="WordCount (Python)"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/28/WordCount-Python/" title="WordCount (Python)">WordCount (Python)</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-07-28 21:44:44"><i class="far fa-calendar-alt"></i>2020-07-28</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-31 17:03:20"><i class="fas fa-history"></i>2020-07-31</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/">大学课程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/">软件工程</a></span></div><div class="content">WordCount (Python)Github项目地址：https://github.com/w1036933220/WordCount一、解题思路
+把项目需求理清楚，画一个思维导图
+
+
+
+考虑各部分功能所需要的大概实现思路
+
+
+
+然后完成了计算文件属性的算法部分
+再回头想对指令的解析问题，顺带添加了递归处理多个文件的功能
+查python的os库文档，最后决定用os.walk读取当前文件夹内的所有文件夹和文件，替换掉输入的*和?通配符，再进行匹配
+
+三、设计实现过程及代码说明
+main.py（入口文件）
+
+123456from utils.utils import *if __name__ == '__main__':    command = input("请输入命令(wc.exe [parameter] &#123;file_name&#125;):\n")parse_command(command)
+
+
+orders.py 存放指令集，和输出各类数据的函数
+
+123456789101112131415161718192021222324252627282930313233343 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/17/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AF%B9%E8%AF%9D%E6%B0%94%E6%B3%A1%E6%A1%86/" title="仿网易云音乐的对话气泡框">     <img class="post_bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="仿网易云音乐的对话气泡框"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/17/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AF%B9%E8%AF%9D%E6%B0%94%E6%B3%A1%E6%A1%86/" title="仿网易云音乐的对话气泡框">仿网易云音乐的对话气泡框</a><div class="article-meta-wrap"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2020-07-17 01:16:34"><i class="far fa-calendar-alt"></i>2020-07-17</span><span class="article-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2020-07-29 15:13:54"><i class="fas fa-history"></i>2020-07-29</span></time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/CSS/">CSS</a></span></div><div class="content">主要就是对话框小三角的实现，效果如下
+
+主要难点就是三角形的实现，有两种思路，一种是利用border，网易云音乐是用两个 ◆ 层叠显示边框的，下面是核心代码
+html12345678&lt;div class="comment"&gt;    &lt;span class="darr"&gt;        &lt;i class="bd"&gt;◆&lt;/i&gt;        &lt;i class="bg"&gt;◆&lt;/i&gt;    &lt;/span&gt;    &lt;a href="#"&gt;liang&lt;/a&gt;    ：&lt;span&gt;嘤嘤嘤呀呀呀呀呀呀晕晕晕晕&lt;/span&gt;&lt;/div&gt;
+
+css123456789101112131415161718192021222324252627282930313233.comment &#123;    position: relative;    width: 200px;    padding: 10px 15px;    background-color: #f4f ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Liang</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">15</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">8</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">2</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Liang5757" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1036933225@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2020/09/20/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="学习css的网站" alt="学习css的网站"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/09/20/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/" title="学习css的网站">学习css的网站</div><time class="aside-post_meta post-meta__date" title="发表于 2020-09-20 16:42:39">2020-09-20</time></div></a></div><div class="aside-recent-post"><a href="/2020/09/20/Typescript%E8%AF%AD%E6%B3%95%E7%AF%87/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="Typescript语法篇" alt="Typescript语法篇"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/09/20/Typescript%E8%AF%AD%E6%B3%95%E7%AF%87/" title="Typescript语法篇">Typescript语法篇</div><time class="aside-post_meta post-meta__date" title="发表于 2020-09-20 16:08:52">2020-09-20</time></div></a></div><div class="aside-recent-post"><a href="/2020/09/17/EventBus%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="EventBus的一种使用场景" alt="EventBus的一种使用场景"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/09/17/EventBus%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/" title="EventBus的一种使用场景">EventBus的一种使用场景</div><time class="aside-post_meta post-meta__date" title="发表于 2020-09-17 19:38:58">2020-09-17</time></div></a></div><div class="aside-recent-post"><a href="/2020/09/16/%E5%AF%B9%E4%BA%8E%E7%82%B9%E6%AD%8C%E5%8F%B0%E6%80%BB%E7%BB%93vuex%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86%E7%9A%84%E8%A1%A5%E5%85%85/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="对于点歌台总结vuex持久化处理的补充" alt="对于点歌台总结vuex持久化处理的补充"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/09/16/%E5%AF%B9%E4%BA%8E%E7%82%B9%E6%AD%8C%E5%8F%B0%E6%80%BB%E7%BB%93vuex%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86%E7%9A%84%E8%A1%A5%E5%85%85/" title="对于点歌台总结vuex持久化处理的补充">对于点歌台总结vuex持久化处理的补充</div><time class="aside-post_meta post-meta__date" title="发表于 2020-09-16 20:25:18">2020-09-16</time></div></a></div><div class="aside-recent-post"><a href="/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" title="element的表单验证效果替换" alt="element的表单验证效果替换"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2020/09/15/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/" title="element的表单验证效果替换">element的表单验证效果替换</div><time class="aside-post_meta post-meta__date" title="发表于 2020-09-15 22:17:25">2020-09-15</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/"><span class="card-category-list-name">大学课程</span><span class="card-category-list-count">3</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/tags/CSS/' style='font-size:20px; color:rgb(94, 135, 141)'>CSS</a><a href='/tags/Java/' style='font-size:17px; color:rgb(28, 189, 93)'>Java</a><a href='/tags/Typescript/' style='font-size:20px; color:rgb(29, 182, 65)'>Typescript</a><a href='/tags/vue/' style='font-size:18px; color:rgb(96, 160, 12)'>vue</a><a href='/tags/%E5%BE%AE%E4%BF%A1%E7%BD%91%E9%A1%B5/' style='font-size:21px; color:rgb(33, 49, 49)'>微信网页</a><a href='/tags/%E6%8A%80%E5%B7%A7/' style='font-size:21px; color:rgb(66, 27, 38)'>技巧</a><a href='/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/' style='font-size:19px; color:rgb(63, 63, 69)'>软件工程</a><a href='/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/' style='font-size:18px; color:rgb(18, 52, 154)'>项目总结</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">8</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">15</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="7/17/2020 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站总字数 :</div><div class="webinfo-site-wordcount">14.9k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Liang</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">简</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleType = function () {
+  var subtitleEffect = true
+  fetch('https://v1.hitokoto.cn')
+    .then(function (res) {
+      return res.json()
+    })
+    .then(function (data) {
+      if (subtitleEffect) {
+        var from = '出自 ' + data.from
+        var sub = "今日事&#44;今日畢,Never put off till tomorrow what you can do today".length == 0 ? new Array() : "今日事&#44;今日畢,Never put off till tomorrow what you can do today".split(',')
+        var both = sub.unshift(data.hitokoto, from)
+        var typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+    .catch(function (err) {
+      console.error(err)
+    })
+}
+window.addEventListener('load', subtitleType)
+</script></body></html>
