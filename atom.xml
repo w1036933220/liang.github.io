@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liang5757.github.io/"/>
-  <updated>2020-09-20T08:09:58.015Z</updated>
+  <updated>2020-09-20T08:44:46.220Z</updated>
   <id>https://liang5757.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习css的网站</title>
+    <link href="https://liang5757.github.io/2020/09/20/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+    <id>https://liang5757.github.io/2020/09/20/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/</id>
+    <published>2020-09-20T08:42:39.000Z</published>
+    <updated>2020-09-20T08:44:46.220Z</updated>
+    
+    <content type="html"><![CDATA[<p>codepen：<a href="https://codepen.io/" target="_blank" rel="noopener">https://codepen.io/</a><br>css常见布局：<a href="https://csslayout.io/patterns/" target="_blank" rel="noopener">https://csslayout.io/patterns/</a><br>css灵感：<a href="https://chokcoco.github.io/CSS-Inspiration/#/" target="_blank" rel="noopener">https://chokcoco.github.io/CSS-Inspiration/#/</a><br>自定义css组件：<a href="https://animista.net/" target="_blank" rel="noopener">https://animista.net/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;codepen：&lt;a href=&quot;https://codepen.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://codepen.io/&lt;/a&gt;&lt;br&gt;css常见布局：&lt;a href=&quot;https://csslayout.io/pat
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://liang5757.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="https://liang5757.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>Typescript语法篇</title>
