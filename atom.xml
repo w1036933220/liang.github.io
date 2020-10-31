@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liang5757.github.io/"/>
-  <updated>2020-10-30T12:49:44.893Z</updated>
+  <updated>2020-10-31T15:02:52.661Z</updated>
   <id>https://liang5757.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深拷贝、浅拷贝</title>
+    <link href="https://liang5757.github.io/2020/10/31/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
+    <id>https://liang5757.github.io/2020/10/31/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D/</id>
+    <published>2020-10-31T15:02:13.000Z</published>
+    <updated>2020-10-31T15:02:52.661Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-区别"><a href="#1-区别" class="headerlink" title="1. 区别"></a>1. 区别</h2><blockquote><p>浅拷贝：复制基本类型和引用类型</p><p>深拷贝：引用类型所指向的内存空间也完全拷贝</p></blockquote><h2 id="2-浅拷贝的实现方式"><a href="#2-浅拷贝的实现方式" class="headerlink" title="2. 浅拷贝的实现方式"></a>2. 浅拷贝的实现方式</h2><h3 id="2-1-Object-assign-target-…sources"><a href="#2-1-Object-assign-target-…sources" class="headerlink" title="2.1 Object.assign(target, …sources)"></a>2.1 Object.assign(target, …sources)</h3><p>把对象的可枚举属性拷贝给目标对象</p><h3 id="2-2-展开运算符…"><a href="#2-2-展开运算符…" class="headerlink" title="2.2 展开运算符…"></a>2.2 展开运算符…</h3><p>与Object.assign相同</p><h4 id="2-3-Array-prototype-concat"><a href="#2-3-Array-prototype-concat" class="headerlink" title="2.3 Array.prototype.concat()"></a>2.3 Array.prototype.concat()</h4><h4 id="2-4-Array-prototype-slice"><a href="#2-4-Array-prototype-slice" class="headerlink" title="2.4 Array.prototype.slice()"></a>2.4 Array.prototype.slice()</h4><h2 id="3-深拷贝的实现方式"><a href="#3-深拷贝的实现方式" class="headerlink" title="3.  深拷贝的实现方式"></a>3.  深拷贝的实现方式</h2><h4 id="3-1-JSON-parse-JSON-stringify"><a href="#3-1-JSON-parse-JSON-stringify" class="headerlink" title="3.1.JSON.parse(JSON.stringify())"></a>3.1.JSON.parse(JSON.stringify())</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">3</span>, &#123; <span class="attr">username</span>: <span class="string">'liangliang'</span> &#125;];</span><br><span class="line"><span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(arr)); <span class="comment">// 深拷贝，会为对象开辟新的栈空间</span></span><br></pre></td></tr></table></figure><p><strong>优点</strong></p><ul><li>可以解决对象内部循环引用的问题，JSON.stringify内部做了循环引用的检测</li></ul><p><strong>缺点</strong></p><ul><li>会抛弃对象的constructor，无论原本的构造函数是什么，在此之后都会变成Object</li><li>但是这样对正则表达式处理后会变成空对象，数组或者对象中的函数变为null</li></ul><h3 id="3-2-jQuery-extend"><a href="#3-2-jQuery-extend" class="headerlink" title="3.2 jQuery.extend"></a>3.2 jQuery.extend</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jQuery.extend( [deep], target, object1 [, objectN ] )</span><br></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://juejin.im/post/6844904197595332622" target="_blank" rel="noopener">https://juejin.im/post/6844904197595332622</a><br><a href="https://github.com/mqyqingfeng/Blog/issues/33（内含jQuery的实现）" target="_blank" rel="noopener">https://github.com/mqyqingfeng/Blog/issues/33（内含jQuery的实现）</a><br><a href="https://segmentfault.com/a/1190000016672263（内含循环深拷贝）" target="_blank" rel="noopener">https://segmentfault.com/a/1190000016672263（内含循环深拷贝）</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-区别&quot;&gt;&lt;a href=&quot;#1-区别&quot; class=&quot;headerlink&quot; title=&quot;1. 区别&quot;&gt;&lt;/a&gt;1. 区别&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;浅拷贝：复制基本类型和引用类型&lt;/p&gt;
+&lt;p&gt;深拷贝：引用类型所指向的内存空间也完全拷贝&lt;/p
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://liang5757.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://liang5757.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>圣杯布局、双飞翼布局</title>
