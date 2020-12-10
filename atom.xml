@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liang5757.github.io/"/>
-  <updated>2020-11-27T14:26:33.055Z</updated>
+  <updated>2020-12-10T06:33:43.233Z</updated>
   <id>https://liang5757.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>惰性加载函数</title>
+    <link href="https://liang5757.github.io/2020/12/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E6%83%B0%E6%80%A7%E5%8A%A0%E8%BD%BD%E5%87%BD%E6%95%B0/"/>
+    <id>https://liang5757.github.io/2020/12/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E6%83%B0%E6%80%A7%E5%8A%A0%E8%BD%BD%E5%87%BD%E6%95%B0/</id>
+    <published>2020-12-10T06:33:02.000Z</published>
+    <updated>2020-12-10T06:33:43.233Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="https://liang5757.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="js" scheme="https://liang5757.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>webpack loader</title>
@@ -527,32 +546,6 @@
       
       
         &lt;h3 id=&quot;1-定位-position&quot;&gt;&lt;a href=&quot;#1-定位-position&quot; class=&quot;headerlink&quot; title=&quot;1. 定位  position&quot;&gt;&lt;/a&gt;1. 定位  position&lt;/h3&gt;&lt;h4 id=&quot;1-1-静态定位-static&quot;&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://liang5757.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="CSS" scheme="https://liang5757.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>浮动与BFC</title>
-    <link href="https://liang5757.github.io/2020/07/31/Css/%E6%B5%AE%E5%8A%A8%E4%B8%8EBFC/"/>
-    <id>https://liang5757.github.io/2020/07/31/Css/%E6%B5%AE%E5%8A%A8%E4%B8%8EBFC/</id>
-    <published>2020-07-31T09:11:21.000Z</published>
-    <updated>2020-11-27T14:27:55.535Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1-浮动的工作原理"><a href="#1-浮动的工作原理" class="headerlink" title="1.  浮动的工作原理"></a>1.  浮动的工作原理</h3><p>浮动会<strong>脱离</strong>正常的文档流，并吸附到其父容器左边，正常布局中位于浮动元素下的内容会<strong>围绕</strong>着浮动元素</p><h3 id="2-可选值"><a href="#2-可选值" class="headerlink" title="2.可选值"></a>2.可选值</h3><table><thead><tr><th>值</th><th>效果</th></tr></thead><tbody><tr><td>none</td><td>默认值，元素默认在文档流中排列</td></tr><tr><td>left</td><td>元素会立即脱离文档流，向页面的左侧浮动</td></tr><tr><td>right</td><td>元素会立即脱离文档流，向页面的右侧浮动</td></tr></tbody></table><h3 id="3-浮动的规则"><a href="#3-浮动的规则" class="headerlink" title="3.浮动的规则"></a>3.浮动的规则</h3><p><strong>内联元素变块元素</strong><br>当为一个元素设置浮动以后（float属性是一个非none的值），元素会立即脱离文档流，元素脱离文档流以后，它下边的元素会立即向上移动，元素浮动以后，会尽量向页面的左上或这是右上漂浮，<strong>直到遇到父元素的边框或者其他的浮动元素</strong>如果浮动元素上边是一个没有浮动的块元素，则<strong>浮动元素不会超过块元素，浮动的元素不会超过他上边的兄弟元素</strong>，<strong>最多最多一边齐</strong>。</p><h3 id="4-浮动的包裹性"><a href="#4-浮动的包裹性" class="headerlink" title="4.浮动的包裹性"></a>4.浮动的包裹性</h3><p>指的是元素尺寸刚好容纳内容, 表现得就像<code>diaplay:inline-block</code></p><p>一样具有包裹性的其他属性:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:inline-block</span></span><br><span class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>/<span class="selector-tag">fixed</span>/<span class="selector-tag">sticky</span></span><br><span class="line"><span class="selector-tag">overflow</span><span class="selector-pseudo">:hidden</span>/<span class="selector-tag">scroll</span></span><br></pre></td></tr></table></figure><h3 id="5-浮动的破坏性"><a href="#5-浮动的破坏性" class="headerlink" title="5. 浮动的破坏性"></a>5. 浮动的破坏性</h3><p>会使父元素<strong>高度塌陷</strong>——为了实现文字环绕效果</p><p>具有破坏性的其他属性:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:none</span></span><br><span class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>/<span class="selector-tag">fixed</span>/<span class="selector-tag">sticky</span></span><br></pre></td></tr></table></figure><h3 id="6-清除浮动-clear"><a href="#6-清除浮动-clear" class="headerlink" title="6.清除浮动  clear"></a>6.清除浮动  clear</h3><p>清除掉其他元素浮动对当前元素产生的影响</p><p><strong>可选值</strong></p><table><thead><tr><th>值</th><th>效果</th></tr></thead><tbody><tr><td>none</td><td>默认值，不清除浮动</td></tr><tr><td>left</td><td>清除左侧浮动元素对当前元素的影响</td></tr><tr><td>right</td><td>清除右侧浮动元素对当前元素的影响</td></tr><tr><td>both</td><td>清除两侧浮动元素对当前元素的影响</td></tr></tbody></table><h3 id="7-解决高度塌陷"><a href="#7-解决高度塌陷" class="headerlink" title="7.解决高度塌陷"></a>7.解决高度塌陷</h3><h4 id="7-1-BFC"><a href="#7-1-BFC" class="headerlink" title="7.1 BFC"></a>7.1 BFC</h4><p>根据W3C的标准，在页面中元素都一个隐含的属性叫做<strong>块级格式化上下文(Block Formatting Context)</strong>，<strong>是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域</strong>，可以设置打开或者关闭，默认是为关闭的。</p><h5 id="BFC打开方式"><a href="#BFC打开方式" class="headerlink" title="BFC打开方式"></a>BFC打开方式</h5><ol><li>设置父元素元素浮动<br> - 使用这种方式开启，虽然可以撑开父元素，但是会导致父元素的宽度丢失。<br> - 而且使用这种方式也会导致下边的元素上移，不能解决问题。</li><li>设置元素绝对定位</li><li>设置元素为flex-box，grid 或 display: table-cell / table-caption / inline-block<br> - 可以解决问题，但是会导致宽度丢失，不推荐使用这种方式</li><li>将元素的overflow设置为一个非visible的值<br> - 此为副作用最小的方式</li></ol><p><strong>BFC特性</strong></p><ol><li>创建了BFC的元素中，<strong>子浮动元素也会参与高度计算</strong>，即父元素的垂直外边距不会和子元素重叠。</li><li>开启BFC的元素是一个独立的容器，子元素不会影响外面的元素，反之亦然——可以解决外边距合并的问题</li><li>开启BFC的元素</li><li>开启BFC的元素可以包含浮动的子元素</li></ol><p>由此得到解决高度塌陷的第一种方法</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br></pre></td></tr></table></figure><p><strong>IE6及以下的浏览器中并不支持BFC，所以使用这种方式不能兼容IE6。</strong></p><p><strong>在IE6中虽然没有BFC，但是具有另一个隐含的属性叫做hasLayout，该属性的作用和BFC类似，所在IE6浏览器可以通过开hasLayout来解决该问题</strong><br><strong>开启方式很多，我们直接使用一种副作用最小的：zoom: 1;</strong></p><p>最后得到以下形式</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>;</span><br><span class="line"><span class="comment">/* zoom表示放大的意思，只在IE中支持 */</span></span><br><span class="line"><span class="selector-tag">zoom</span>: 1;</span><br></pre></td></tr></table></figure><h4 id="7-2-用空白元素设置clear-both"><a href="#7-2-用空白元素设置clear-both" class="headerlink" title="7.2 用空白元素设置clear:both"></a>7.2 用空白元素设置clear:both</h4><p>可以直接在高度塌陷的<strong>父元素的最后</strong>，<strong>添加一个空白的div</strong>，由于这个div并没有浮动，所以他是可以撑开父元素的高度的，然后在对其进行清除浮动，这样可以通过这个空白的div来撑开父元素的高度，基本没有副作用。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clear</span> &#123;</span><br><span class="line"><span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;clear&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>虽然可以解决问题，但会在文档中添加多余的结构，不符合结构与表现分离的思想。</p><h4 id="7-3-隐式元素"><a href="#7-3-隐式元素" class="headerlink" title="7.3 隐式元素"></a>7.3 隐式元素</h4><p>由7.2的方法可以想到用css实现的方法</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="comment">/* 添加一个内容 */</span></span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="comment">/* 转换为一个块元素 */</span></span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="comment">/* 清除两侧的浮动 */</span></span><br><span class="line">    <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 兼容IE6 */</span></span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    <span class="attribute">zoom</span>:<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h6 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a><strong>参考文章</strong></h6><p><a href="http://ife.baidu.com/note/detail/id/959">http://ife.baidu.com/note/detail/id/959</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;1-浮动的工作原理&quot;&gt;&lt;a href=&quot;#1-浮动的工作原理&quot; class=&quot;headerlink&quot; title=&quot;1.  浮动的工作原理&quot;&gt;&lt;/a&gt;1.  浮动的工作原理&lt;/h3&gt;&lt;p&gt;浮动会&lt;strong&gt;脱离&lt;/strong&gt;正常的文档流，并吸附到其父容器左
       
     
     </summary>
