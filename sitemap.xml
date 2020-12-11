@@ -2,203 +2,210 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/12/11/Webpack/Webpack-Tree-Shaking/</loc>
+    <loc>https://liang5757.github.io/2020/12/11/Webpack/Webpack-%E6%A8%A1%E5%9D%97%E7%83%AD%E6%9B%BF%E6%8D%A2/</loc>
+    
+    <lastmod>2020-12-11T15:38:27.440Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://liang5757.github.io/2020/12/11/Webpack/Webpack-Tree-Shaking/</loc>
     
     <lastmod>2020-12-10T17:53:11.674Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/12/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E6%83%B0%E6%80%A7%E5%8A%A0%E8%BD%BD%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://liang5757.github.io/2020/12/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E6%83%B0%E6%80%A7%E5%8A%A0%E8%BD%BD%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2020-12-10T07:13:45.991Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/09/25/Ts/Typescript%E8%AF%AD%E6%B3%95%E7%AF%87/</loc>
+    <loc>https://liang5757.github.io/2020/09/25/Ts/Typescript%E8%AF%AD%E6%B3%95%E7%AF%87/</loc>
     
     <lastmod>2020-11-27T14:46:42.844Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/09/17/%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/EventBus%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
+    <loc>https://liang5757.github.io/2020/09/17/%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/EventBus%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
     
     <lastmod>2020-11-27T14:45:45.937Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/09/15/%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/</loc>
+    <loc>https://liang5757.github.io/2020/09/15/%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/element%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C%E6%9B%BF%E6%8D%A2/</loc>
     
     <lastmod>2020-11-27T14:45:45.851Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/17/%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AF%B9%E8%AF%9D%E6%B0%94%E6%B3%A1%E6%A1%86/</loc>
+    <loc>https://liang5757.github.io/2020/07/17/%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AF%B9%E8%AF%9D%E6%B0%94%E6%B3%A1%E6%A1%86/</loc>
     
     <lastmod>2020-11-27T14:45:45.680Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/29/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97%E7%94%9F%E6%88%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A8%8B%E5%BA%8F-Python/</loc>
+    <loc>https://liang5757.github.io/2020/07/29/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97%E7%94%9F%E6%88%90%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A8%8B%E5%BA%8F-Python/</loc>
     
     <lastmod>2020-11-27T14:45:28.268Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/09/16/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/%E5%AF%B9%E4%BA%8E%E7%82%B9%E6%AD%8C%E5%8F%B0%E6%80%BB%E7%BB%93vuex%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86%E7%9A%84%E8%A1%A5%E5%85%85/</loc>
+    <loc>https://liang5757.github.io/2020/09/16/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/%E5%AF%B9%E4%BA%8E%E7%82%B9%E6%AD%8C%E5%8F%B0%E6%80%BB%E7%BB%93vuex%E6%8C%81%E4%B9%85%E5%8C%96%E5%A4%84%E7%90%86%E7%9A%84%E8%A1%A5%E5%85%85/</loc>
     
     <lastmod>2020-11-27T14:45:06.153Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/08/18/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/%E7%82%B9%E6%AD%8C%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://liang5757.github.io/2020/08/18/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/%E7%82%B9%E6%AD%8C%E5%8F%B0%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/</loc>
     
     <lastmod>2020-11-27T14:44:57.396Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/09/29/Js/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/</loc>
+    <loc>https://liang5757.github.io/2020/09/29/Js/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/</loc>
     
     <lastmod>2020-11-27T14:44:36.156Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/31/Js/%E4%BA%8B%E4%BB%B6-Event/</loc>
+    <loc>https://liang5757.github.io/2020/07/31/Js/%E4%BA%8B%E4%BB%B6-Event/</loc>
     
     <lastmod>2020-11-27T14:44:31.157Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/10/31/Js/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D/</loc>
+    <loc>https://liang5757.github.io/2020/10/31/Js/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D/</loc>
     
     <lastmod>2020-11-27T14:44:02.930Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/08/18/%E5%BE%AE%E4%BF%A1%E7%BD%91%E9%A1%B5/%E5%BE%AE%E4%BF%A1%E7%BD%91%E9%A1%B5%E6%8E%88%E6%9D%83/</loc>
+    <loc>https://liang5757.github.io/2020/08/18/%E5%BE%AE%E4%BF%A1%E7%BD%91%E9%A1%B5/%E5%BE%AE%E4%BF%A1%E7%BD%91%E9%A1%B5%E6%8E%88%E6%9D%83/</loc>
     
     <lastmod>2020-11-27T14:43:57.928Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/31/Js/js%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E/</loc>
+    <loc>https://liang5757.github.io/2020/07/31/Js/js%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E/</loc>
     
     <lastmod>2020-11-27T14:43:51.879Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/10/04/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E9%87%8D%E7%BB%98%E4%B8%8E%E5%9B%9E%E6%B5%81/</loc>
+    <loc>https://liang5757.github.io/2020/10/04/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E9%87%8D%E7%BB%98%E4%B8%8E%E5%9B%9E%E6%B5%81/</loc>
     
     <lastmod>2020-11-27T14:43:41.953Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/31/Java/Java%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/</loc>
+    <loc>https://liang5757.github.io/2020/07/31/Java/Java%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C/</loc>
     
     <lastmod>2020-11-27T14:43:13.451Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/28/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/WordCount-Python/</loc>
+    <loc>https://liang5757.github.io/2020/07/28/%E5%A4%A7%E5%AD%A6%E8%AF%BE%E7%A8%8B/WordCount-Python/</loc>
     
     <lastmod>2020-11-27T14:42:55.854Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/11/17/%E6%B5%8B%E8%AF%95/Jest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8/</loc>
+    <loc>https://liang5757.github.io/2020/11/17/%E6%B5%8B%E8%AF%95/Jest%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%85%A5%E9%97%A8/</loc>
     
     <lastmod>2020-11-27T14:41:25.335Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/09/20/Css/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://liang5757.github.io/2020/09/20/Css/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/</loc>
     
     <lastmod>2020-11-27T14:41:18.049Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/10/30/Css/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E3%80%81%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</loc>
+    <loc>https://liang5757.github.io/2020/10/30/Css/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E3%80%81%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</loc>
     
     <lastmod>2020-11-27T14:28:14.244Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/10/30/Css/css%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%EF%BC%9ALess/</loc>
+    <loc>https://liang5757.github.io/2020/10/30/Css/css%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8%EF%BC%9ALess/</loc>
     
     <lastmod>2020-11-27T14:27:55.626Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/31/Css/%E6%B5%AE%E5%8A%A8%E4%B8%8EBFC/</loc>
+    <loc>https://liang5757.github.io/2020/07/31/Css/%E6%B5%AE%E5%8A%A8%E4%B8%8EBFC/</loc>
     
     <lastmod>2020-11-27T14:27:55.535Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/07/31/Css/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E7%BA%A7/</loc>
+    <loc>https://liang5757.github.io/2020/07/31/Css/%E5%AE%9A%E4%BD%8D%E4%B8%8E%E5%B1%82%E7%BA%A7/</loc>
     
     <lastmod>2020-11-27T14:27:55.398Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/11/22/Webpack/%E5%88%9D%E8%AF%86webpack/</loc>
+    <loc>https://liang5757.github.io/2020/11/22/Webpack/%E5%88%9D%E8%AF%86webpack/</loc>
     
     <lastmod>2020-11-27T14:26:33.342Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/11/22/Webpack/webpack%E6%96%87%E4%BB%B6%E6%8C%87%E7%BA%B9/</loc>
+    <loc>https://liang5757.github.io/2020/11/22/Webpack/webpack%E6%96%87%E4%BB%B6%E6%8C%87%E7%BA%B9/</loc>
     
     <lastmod>2020-11-27T14:26:33.251Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/2020/11/27/Webpack/webpack%20loader/</loc>
+    <loc>https://liang5757.github.io/2020/11/27/Webpack/webpack%20loader/</loc>
     
     <lastmod>2020-11-27T14:26:33.055Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/tags/index.html</loc>
+    <loc>https://liang5757.github.io/tags/index.html</loc>
     
     <lastmod>2020-07-16T16:05:30.649Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/link/index.html</loc>
+    <loc>https://liang5757.github.io/link/index.html</loc>
     
     <lastmod>2020-07-16T16:05:28.416Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zheng_liang5.gitee.io/blog/categories/index.html</loc>
+    <loc>https://liang5757.github.io/categories/index.html</loc>
     
     <lastmod>2020-07-16T16:04:38.992Z</lastmod>
     
