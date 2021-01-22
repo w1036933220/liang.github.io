@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liang5757.github.io/"/>
-  <updated>2021-01-19T15:27:25.764Z</updated>
+  <updated>2021-01-22T14:26:18.969Z</updated>
   <id>https://liang5757.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>减少使用setInterval</title>
+    <link href="https://liang5757.github.io/2021/01/22/Js/%E5%87%8F%E5%B0%91%E4%BD%BF%E7%94%A8setInterval/"/>
+    <id>https://liang5757.github.io/2021/01/22/Js/%E5%87%8F%E5%B0%91%E4%BD%BF%E7%94%A8setInterval/</id>
+    <published>2021-01-22T14:25:34.000Z</published>
+    <updated>2021-01-22T14:26:18.969Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>setInterval</code>很少使用在生成环境下，因为有如下几个缺点</p><h2 id="缺点一：setInterval无视代码错误"><a href="#缺点一：setInterval无视代码错误" class="headerlink" title="缺点一：setInterval无视代码错误"></a>缺点一：setInterval无视代码错误</h2><p><code>setInterval</code>执行的代码即使代码报错，它还会持续不断（不管不顾）地调用该代码</p><h2 id="缺点二：setInterval无视网络延迟"><a href="#缺点二：setInterval无视网络延迟" class="headerlink" title="缺点二：setInterval无视网络延迟"></a>缺点二：setInterval无视网络延迟</h2><p>假设你每隔一段时间就通过Ajax轮询一次服务器，看看有没有新数据（注意：如果你真的这么做了，那恐怕你做错了；建议使用<a href="https://link.juejin.im/?target=http%3A%2F%2Fgithub.com%2Fblog%2F467-smart-js-polling">“补偿性轮询”（backoff polling）</a>）。而由于某些原因（服务器过载、临时断网、流量剧增、用户带宽受限，等等），你的请求要花的时间远比你想象的要长。但<code>setInterval</code>不在乎。它仍然会按定时持续不断地触发请求，最终你的客户端网络队列会塞满Ajax调用。</p><h2 id="缺点三：setInterval不保证按时执行"><a href="#缺点三：setInterval不保证按时执行" class="headerlink" title="缺点三：setInterval不保证按时执行"></a>缺点三：setInterval不保证按时执行</h2><h3 id="原因一：执行时间被前面任务阻塞"><a href="#原因一：执行时间被前面任务阻塞" class="headerlink" title="原因一：执行时间被前面任务阻塞"></a>原因一：执行时间被前面任务阻塞</h3><p><code>setInterval</code>只是按时把时间推送到任务队列，因为js是单线程，所以如果前面的任务耗时较久，那么定时器的执行时间和我们预定的时间不一致</p><h3 id="原因二：推送被忽略"><a href="#原因二：推送被忽略" class="headerlink" title="原因二：推送被忽略"></a>原因二：推送被忽略</h3><p><code>setInterval</code>在推送到任务队列前，<strong>会检查上一次的任务是否仍在队列中</strong>，如果<strong>有则不填加</strong>，<code>setTimeout</code>则会直接添加</p><h2 id="用setTimeout模拟setInterval"><a href="#用setTimeout模拟setInterval" class="headerlink" title="用setTimeout模拟setInterval"></a>用setTimeout模拟setInterval</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">interval</span>(<span class="params">func, wait</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> timer = <span class="literal">null</span>;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">interfunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    func.call(<span class="literal">null</span>);</span><br><span class="line">    timer = <span class="built_in">setTimeout</span>(interfunc, wait);</span><br><span class="line">  &#125;;</span><br><span class="line">  timer = <span class="built_in">setTimeout</span>(interfunc, wait);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> timer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;code&gt;setInterval&lt;/code&gt;很少使用在生成环境下，因为有如下几个缺点&lt;/p&gt;
+&lt;h2 id=&quot;缺点一：setInterval无视代码错误&quot;&gt;&lt;a href=&quot;#缺点一：setInterval无视代码错误&quot; class=&quot;headerlink&quot; title
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://liang5757.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="js" scheme="https://liang5757.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>CJS、ESM、UMD模块化标准</title>
@@ -540,32 +567,6 @@
     
     
       <category term="ts" scheme="https://liang5757.github.io/tags/ts/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习css的网站</title>
-    <link href="https://liang5757.github.io/2020/09/20/Css/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/"/>
-    <id>https://liang5757.github.io/2020/09/20/Css/%E5%AD%A6%E4%B9%A0css%E7%9A%84%E7%BD%91%E7%AB%99/</id>
-    <published>2020-09-20T08:42:39.000Z</published>
-    <updated>2020-11-27T14:41:18.049Z</updated>
-    
-    <content type="html"><![CDATA[<p>codepen：<a href="https://codepen.io/">https://codepen.io/</a><br>css常见布局：<a href="https://csslayout.io/patterns/">https://csslayout.io/patterns/</a><br>常见加载动画：<a href="https://tobiasahlin.com/spinkit/">https://tobiasahlin.com/spinkit/</a><br>常见css效果：<a href="https://emilkowalski.github.io/css-effects-snippets/">https://emilkowalski.github.io/css-effects-snippets/</a><br>css灵感：<a href="https://chokcoco.github.io/CSS-Inspiration/#/">https://chokcoco.github.io/CSS-Inspiration/#/</a><br>自定义css组件：<a href="https://animista.net/">https://animista.net/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;codepen：&lt;a href=&quot;https://codepen.io/&quot;&gt;https://codepen.io/&lt;/a&gt;&lt;br&gt;css常见布局：&lt;a href=&quot;https://csslayout.io/patterns/&quot;&gt;https://csslayout.io/pa
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://liang5757.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="CSS" scheme="https://liang5757.github.io/tags/CSS/"/>
     
   </entry>
   
